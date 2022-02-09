@@ -21,16 +21,18 @@ function App() {
         //more stuff  xcoming up
         return (
           <article key={id}>
-            <img src={image} alt="" />
+            <img src={image} alt="" className='person-img' />
             <h4>{name}</h4>
             <p className='title'>{title}</p>
             <p className="text">{quote}</p>
-            <FaQuoteLeft className='icon'/>
             <FaQuoteRight className='icon'/>
           </article>
         )
       })}
       <button className="prev">
+        <FiChevronLeft/>
+      </button>
+      <button className="next">
         <FiChevronRight/>
       </button>
     </div>
